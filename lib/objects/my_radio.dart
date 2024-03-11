@@ -36,7 +36,8 @@ class MyRadio extends MyGenericObject {
     clickcount = ds["clickcount"];
   }
 
-  Widget widget({Function(RadioPlayer)? onStart, Function(RadioPlayer)? onStop}) {
+  Widget widget(
+      {Function(RadioPlayer)? onStart, Function(RadioPlayer)? onStop}) {
     return RadioWidget(radio: this, onStart: onStart, onStop: onStop);
   }
 
