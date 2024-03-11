@@ -2,14 +2,14 @@
 
 **flutter_my_radio provide an easy way to find and listen any web radio in you flutter app.**
 
+![Screenshot_20240311-092500](https://github.com/mynumeric-mobile/flutter_my_radio/assets/60822263/d1a0d37d-2fed-44c9-85cd-23e364234be8)
+
+
 This plugin is flutter client for <a href="https://www.radio-browser.info/">radio-browser api</a>.
 
 Radio-browser is a database of internet radios. It allows you to search for radios using numerous criteria: name, tags, countries, languages.
 
 There is a lot of metadata, including stream urls, site urls and other indications.
-
-
-
 
 ## Usage
 
