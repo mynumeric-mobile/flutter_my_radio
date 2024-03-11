@@ -74,8 +74,8 @@ class MyRadioTools {
   }
 
   Future<List<MyRadio>> findRadio(String keyword, StationFilterTypes filterType,
-      {bool forceHttps = false, SearchParameters? filter, int retryAttempt = 0}) async {
-    String strUrl = "$srvUrl/stations/${filterType.name}/$keyword?${filter?.request ?? ""}";
+      {bool forceHttps = false, SearchParameters? parameters, int retryAttempt = 0}) async {
+    String strUrl = "$srvUrl/stations/${filterType.name}/$keyword?${parameters?.request ?? ""}";
 
     var url = Uri.parse(strUrl);
 
@@ -92,7 +92,7 @@ class MyRadioTools {
       retryAttempt++;
       if (retryAttempt == retryLimit) rethrow;
 
-      return findRadio(keyword, filterType, forceHttps: forceHttps, filter: filter, retryAttempt: retryAttempt);
+      return findRadio(keyword, filterType, forceHttps: forceHttps, parameters: parameters, retryAttempt: retryAttempt);
     }
   }
 

@@ -157,15 +157,15 @@ class _MyAppState extends State<MyApp> {
   Future<List<MyRadio>> getRadios() {
     if (lastSearch == search.text) return Future.value(radios);
 
-    SearchParameters? f;
+    SearchParameters? p;
     // searchfilter could be used for advanced filter
-    //var f = StationFilterTypes.byname.getParameters;
-    //f.limit = 1;
+    //var p = StationFilterTypes.byname.getParameters;
+    //p.limit = 1;
 
     lastSearch = search.text;
     return search.text == ""
         ? Future.value([])
-        : radioTools.findRadio(search.text, filterType.toStationFilter, forceHttps: true, filter: f);
+        : radioTools.findRadio(search.text, filterType.toStationFilter, forceHttps: true, parameters: p);
   }
 
   Widget get countWidget => ValueListenableBuilder<int?>(

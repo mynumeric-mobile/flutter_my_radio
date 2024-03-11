@@ -11,6 +11,8 @@ class MyRadio extends MyGenericObject {
   String? stream;
   String? iconURL;
   String? stationUUID;
+  int? vote;
+  int? clickcount;
 
   ///Languages that are spoken in this stream by code ISO 639-2/B
   List<String> langages = [];
@@ -30,7 +32,8 @@ class MyRadio extends MyGenericObject {
     langages = ds["language"]?.split(",");
     tags = ds["tags"]?.split(",");
     country = ds["country"];
-    stationUUID = ds["stationuuid"];
+    vote = ds["vote"];
+    clickcount = ds["clickcount"];
   }
 
   Widget widget({Function(RadioPlayer)? onStart, Function(RadioPlayer)? onStop}) {
