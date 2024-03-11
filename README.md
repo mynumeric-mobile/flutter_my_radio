@@ -1,6 +1,6 @@
 # flutter_my_radio
 
-**flutter_my_radio provide an easy way to find and listen any web radio in you flutter app.**
+**flutter_my_radio provide an easy way to find and listen any web radio in your flutter app.**
 
 ![Screenshot_20240311-092500](https://github.com/mynumeric-mobile/flutter_my_radio/assets/60822263/d1a0d37d-2fed-44c9-85cd-23e364234be8)
 

@@ -1,5 +1,5 @@
 name: flutter_my_radio
-description: "Radio-browser client API."
+description: "Radio-browser client API. flutter_my_radio provide an easy way to find and listen any web radio in your flutter app."
 version: 1.0.0
 repository: https://github.com/mynumeric-mobile/flutter_my_radio
 
