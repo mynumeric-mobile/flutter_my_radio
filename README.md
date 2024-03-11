@@ -1,6 +1,6 @@
-# flutter_minimalist_audio_player_example
+# flutter_my_radio
 
-This plugin is flutter client for radio-browser api.
+This plugin is flutter client for <a href="https://www.radio-browser.info/">radio-browser api</a>.
 
 ## Usage
 
