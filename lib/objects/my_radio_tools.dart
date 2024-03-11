@@ -5,29 +5,12 @@ import 'package:flutter_my_radio/objects/my_radio_codec.dart';
 import 'package:flutter_my_radio/objects/my_radio_state.dart';
 import 'package:flutter_my_radio/objects/my_radio_tag.dart';
 import 'package:http/http.dart' as http;
-import '../objects/my_radio.dart';
-import '../objects/my_radio_country.dart';
-import '../objects/my_radio_language.dart';
-import '../objects/search_parameter.dart';
-
-enum RadioListTypes { countries, codec, state, languages, tags, stations }
-
-enum StationFilterTypes {
-  byuuid,
-  byname,
-  bynameexact,
-  bycodec,
-  bycodecexact,
-  bycountry,
-  bycountryexact,
-  bycountrycodeexact,
-  bystate,
-  bystateexact,
-  bylanguage,
-  bylanguageexact,
-  bytag,
-  bytagexact
-}
+import 'my_radio.dart';
+import 'my_radio_country.dart';
+import 'my_radio_language.dart';
+import 'search_parameter.dart';
+import 'radio_list_types.dart';
+import 'station_filter_types.dart';
 
 class MyRadioTools {
   /// Radio browser API

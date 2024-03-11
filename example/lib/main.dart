@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_my_radio/objects/my_radio.dart';
+import 'package:flutter_my_radio/objects/my_radio_tools.dart';
 import 'package:flutter_my_radio/objects/search_parameter.dart';
-import 'package:flutter_my_radio/helpers/my_radio_tools.dart';
+import 'package:flutter_my_radio/objects/station_filter_types.dart';
 
 void main() {
   runApp(const MyApp());
