@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:basic_utils/basic_utils.dart';
+import 'package:flutter_my_radio/helpers/translator.dart';
 import 'package:flutter_my_radio/objects/my_generic_object.dart';
 import 'package:flutter_my_radio/objects/my_radio_codec.dart';
 import 'package:flutter_my_radio/objects/my_radio_state.dart';
@@ -58,13 +59,17 @@ class MyRadioTools {
 
   Future<List<MyRadio>> findRadio(String keyword, StationFilterTypes filterType,
       {bool forceHttps = false, SearchParameters? parameters, int retryAttempt = 0}) async {
+    // for language search translate keyword in english
+    if ((filterType == StationFilterTypes.bylanguage || filterType == StationFilterTypes.bylanguageexact) &&
+        languageDictionary.containsKey(keyword)) keyword = languageDictionary[keyword]!;
+
     String strUrl = "$srvUrl/stations/${filterType.name}/$keyword?${parameters?.request ?? ""}";
 
     var url = Uri.parse(strUrl);
 
     try {
       http.Response response = await http.get(url, headers: {"User-Agent": clientName});
-      var ds = json.decode(response.body);
+      var ds = json.decode(utf8.decode(response.bodyBytes));
       List<MyRadio> radios = [];
       for (var r in ds) {
         radios.add(MyRadio.build(r, forceHttps: forceHttps));

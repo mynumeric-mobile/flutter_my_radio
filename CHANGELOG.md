@@ -4,3 +4,6 @@ First commit
 Readme update
 ## 1.0.2
 Change format issues
+## 1.0.3
+Adding language tranlation
+Accents support

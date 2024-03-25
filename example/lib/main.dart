@@ -160,8 +160,8 @@ class _MyAppState extends State<MyApp> {
 
     SearchParameters? p;
     // searchfilter could be used for advanced filter
-    //var p = StationFilterTypes.byname.getParameters;
-    //p.limit = 1;
+    p = StationFilterTypes.byname.getParameters;
+    p.hidebroken = true;
 
     lastSearch = search.text;
     return search.text == ""
