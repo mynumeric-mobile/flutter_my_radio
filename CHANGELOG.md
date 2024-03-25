@@ -7,3 +7,5 @@ Change format issues
 ## 1.0.3
 Adding language tranlation
 Accents support
+## 1.0.4
+language tranlation improvement

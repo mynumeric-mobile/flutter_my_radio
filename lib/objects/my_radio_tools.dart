@@ -61,7 +61,7 @@ class MyRadioTools {
       {bool forceHttps = false, SearchParameters? parameters, int retryAttempt = 0}) async {
     // for language search translate keyword in english
     if ((filterType == StationFilterTypes.bylanguage || filterType == StationFilterTypes.bylanguageexact) &&
-        languageDictionary.containsKey(keyword)) keyword = languageDictionary[keyword]!;
+        languageDictionary.containsKey(keyword.toLowerCase())) keyword = languageDictionary[keyword.toLowerCase()]!;
 
     String strUrl = "$srvUrl/stations/${filterType.name}/$keyword?${parameters?.request ?? ""}";
 
