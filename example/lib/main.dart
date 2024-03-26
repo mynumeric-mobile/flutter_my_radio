@@ -98,8 +98,8 @@ class _MyAppState extends State<MyApp> {
                             : ListView.builder(
                                 itemCount: radios!.length,
                                 itemBuilder: (context, index) {
-                                  return radios![index].widget(onStart: (p) {
-                                    _currentRadio?.player.stop();
+                                  return radios![index].widget(beforeStart: (p) async {
+                                    await _currentRadio?.player.fadeOut(); //player.stop();
                                     _currentRadio = p;
                                     if (radios![index].stationUUID != null) radioTools.addClick(radios![index].stationUUID!);
                                   }, onStop: (p) {

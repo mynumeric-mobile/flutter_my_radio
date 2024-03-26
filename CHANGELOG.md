@@ -9,3 +9,5 @@ Adding language tranlation
 Accents support
 ## 1.0.4
 language tranlation improvement
+## 1.0.5
+update minimalist player plugin for fade in and fade out effect

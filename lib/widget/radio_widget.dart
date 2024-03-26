@@ -4,10 +4,11 @@ import 'package:url_launcher/url_launcher.dart';
 import '../objects/my_radio.dart';
 
 class RadioWidget extends StatelessWidget {
-  const RadioWidget({super.key, required this.radio, this.onStart, this.onStop});
+  const RadioWidget({super.key, required this.radio, this.onStart, this.onStop, this.beforeStart});
   final MyRadio radio;
   final Function(RadioPlayer)? onStart;
   final Function(RadioPlayer)? onStop;
+  final Function(RadioPlayer)? beforeStart;
 
   @override
   Widget build(BuildContext context) {
@@ -18,6 +19,9 @@ class RadioWidget extends StatelessWidget {
           Expanded(child: Text(radio.name ?? "inconnu")),
           MinimalistAudioPlayer(
               media: radio.stream,
+              beforeStart: (p) {
+                return beforeStart?.call(RadioPlayer(p));
+              },
               onStart: (p) {
                 onStart?.call(RadioPlayer(p));
               },

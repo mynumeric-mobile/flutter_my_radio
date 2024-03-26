@@ -183,17 +183,17 @@ packages:
     dependency: transitive
     description:
       name: flutter_minimalist_audio_player
-      sha256: a37f7558ed2f6c0b3536ff4195642ad04eada500e61d3b042ce4c6285b1967ee
+      sha256: "02e7e7dbcd95f763728e32bcec22d3db4cc01a6ce054a5a4a8e3b078059c967b"
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.2"
+    version: "1.1.0"
   flutter_my_radio:
     dependency: "direct main"
     description:
       path: ".."
       relative: true
     source: path
-    version: "1.0.2"
+    version: "1.0.5"
   flutter_test:
     dependency: "direct dev"
     description: flutter

@@ -36,9 +36,17 @@ class MyRadio extends MyGenericObject {
     clickcount = ds["clickcount"];
   }
 
-  Widget widget(
-      {Function(RadioPlayer)? onStart, Function(RadioPlayer)? onStop}) {
-    return RadioWidget(radio: this, onStart: onStart, onStop: onStop);
+  Widget widget({
+    Function(RadioPlayer)? onStart,
+    Function(RadioPlayer)? onStop,
+    Function(RadioPlayer)? beforeStart,
+  }) {
+    return RadioWidget(
+      radio: this,
+      onStart: onStart,
+      onStop: onStop,
+      beforeStart: beforeStart,
+    );
   }
 
   /// change http to https
