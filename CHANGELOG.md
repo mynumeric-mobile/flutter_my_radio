@@ -11,3 +11,5 @@ Accents support
 language tranlation improvement
 ## 1.0.5
 update minimalist player plugin for fade in and fade out effect
+## 1.0.6
+update minimalist player to last upsate

@@ -1,6 +1,6 @@
 name: flutter_my_radio
 description: "Radio-browser client API. flutter_my_radio provide an easy way to find and listen any web radio in your flutter app."
-version: 1.0.5
+version: 1.0.6
 repository: https://github.com/mynumeric-mobile/flutter_my_radio
 
 # This package supports all platforms listed below.
@@ -10,7 +10,7 @@ platforms:
   web:
 
 environment:
-  sdk: ">=2.18.0"
+  sdk: ">=2.18.0 <4.0.0"
   flutter: '>=3.3.0'
 
 dependencies:
@@ -18,7 +18,7 @@ dependencies:
     sdk: flutter
   http: ^1.2.1
   basic_utils: ^5.7.0
-  flutter_minimalist_audio_player: ^1.1.0
+  flutter_minimalist_audio_player: ^1.1.1
   url_launcher: ^6.2.5
 
 dev_dependencies:
