@@ -39,7 +39,7 @@ class MyRadio extends MyGenericObject {
   Widget widget({
     Function(RadioPlayer)? onStart,
     Function(RadioPlayer)? onStop,
-    Function(RadioPlayer)? beforeStart,
+    Future<void> Function(RadioPlayer)? beforeStart,
   }) {
     return RadioWidget(
       radio: this,

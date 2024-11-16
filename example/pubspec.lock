@@ -175,18 +175,19 @@ packages:
     dependency: "direct dev"
     description:
       name: flutter_lints
-      sha256: "9e8c3858111da373efc5aa341de011d9bd23e2c5c5e0c62bccf32438e192d7b1"
+      sha256: "5398f14efa795ffb7a33e9b6a08798b26a180edac4ad7db3f231e40f82ce11e1"
       url: "https://pub.dev"
     source: hosted
-    version: "3.0.2"
+    version: "5.0.0"
   flutter_minimalist_audio_player:
     dependency: transitive
     description:
-      name: flutter_minimalist_audio_player
-      sha256: "722bcebada2fd57e86f99e9a2a30b7cb3d2eb32d87e1a15677d8faad83f1d7c4"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.1.1"
+      path: "."
+      ref: HEAD
+      resolved-ref: a455649e1bb60ea46106092081f61857bb8983d1
+      url: "https://github.com/mynumeric-mobile/flutter_minimalist_audio_player"
+    source: git
+    version: "1.1.2"
   flutter_my_radio:
     dependency: "direct main"
     description:
@@ -274,10 +275,10 @@ packages:
     dependency: transitive
     description:
       name: lints
-      sha256: cbf8d4b858bb0134ef3ef87841abdf8d63bfc255c266b7bf6b39daa1085c4290
+      sha256: "3315600f3fb3b135be672bf4a178c55f274bebe368325ae18462c89ac1e3b413"
       url: "https://pub.dev"
     source: hosted
-    version: "3.0.0"
+    version: "5.0.0"
   logging:
     dependency: transitive
     description:

@@ -8,7 +8,7 @@ class RadioWidget extends StatelessWidget {
   final MyRadio radio;
   final Function(RadioPlayer)? onStart;
   final Function(RadioPlayer)? onStop;
-  final Function(RadioPlayer)? beforeStart;
+  final Future<void> Function(RadioPlayer)? beforeStart;
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class RadioWidget extends StatelessWidget {
           Expanded(child: Text(radio.name ?? "inconnu")),
           MinimalistAudioPlayer(
               media: radio.stream,
-              beforeStart: (p) {
+              beforeStart: (p) async {
                 return beforeStart?.call(RadioPlayer(p));
               },
               onStart: (p) {
