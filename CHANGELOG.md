@@ -13,3 +13,5 @@ language tranlation improvement
 update minimalist player plugin for fade in and fade out effect
 ## 1.0.6
 update minimalist player to last upsate
+## 1.0.7
+add header "accept": "*/*" when loading icon for cors

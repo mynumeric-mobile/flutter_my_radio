@@ -47,6 +47,7 @@ class RadioWidget extends StatelessWidget {
                         if (radio.URL != null) _launchInBrowser(Uri.parse(radio.URL!));
                       },
                       child: Image.network(
+                        headers: const {"accept": "*/*"},
                         radio.iconURL!,
                         errorBuilder: (BuildContext context, Object exception, StackTrace? stackTrace) {
                           return const Icon(Icons.radio);
